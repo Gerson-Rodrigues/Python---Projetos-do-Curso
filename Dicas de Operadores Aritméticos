@@ -1,0 +1,33 @@
+Ordem de precedência para realização de calculos
+aritméticos em Python:
+1º os parenteses ()
+2º a potência **
+3º multi. *, div. /, div. inteiro //, resto da divisão %
+No terceiro lugar, começa à resolver por quem vir primeiro
+4º adição + e subtração -
+No quarto também resolve por ordem de inicio
+
+DICAS
+
+Operadores com String
+EX.:
+'oi' + 'ola' == oiola
+'oi ' * 5 == 'oi oi oi oi oi '
+'=' * 20 == '===================='
+
+OBS: Concatenação de strings (+), Replicação de strings(*)
+
+Com Print
+EX.:
+nome = input('Qual o seu nome?')
+print('Prazer em te conhecer {:=^20}!'.format(nome))
+
+OBS: "{:=^20}" ele replicará o dado informado e adicionará caracteres até
+completar 20, no caso acima será com o sinal "="
+
+________________________________________________________________________________
+Para juntar na mesma linha dois prints ao final do primeiro print separe
+por virgula "," e adicione end = ' ' (com um espaço vazio ou com caracteres)
+
+Para quebrar a linha no mesmo print use "\n" , isso ajuda a não precisar
+usar vários prints
