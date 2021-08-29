@@ -1,0 +1,130 @@
+FATIAMENTO DE STRING
+
+ex:
+frase = 'Curso em Video Python'
+
+frase____________________________________________________
+| C | u | r | s | o |    | e | m |    | V |  i  | d | e | o |    | P | y |  t  | h | o | n |
+   0   1   2  3    4   5   6    7   8   9   10  11 12 13 14  15 16  17 18  19  20
+
+se eu solicitar
+frase[9] ele irá escrever -> 'V'
+
+e se solicitar
+frase[9:13] ele irá escrever -> 'Vide' (pois sempre vai parar uma posição
+antes da última posição descrita
+
+se solicitar
+frase[9:21:2] ele irá escrever -> 'VdoPto' (pois o último comando dentro dos
+colchetes faz com ele pule o numero descrito (2) das posições orientadas.
+
+se solicitar
+frase[:5] ele irá escrever -> 'Curso' (porque foi apenas delimitado o final (5)
+deixando o Python entender que deve começar desde o inicio (0).
+
+se solicitar
+frase[15:] ele irá escrever ->'Python' (seguindo a mesma linha de racíocinio
+do exemplo de cima, ele tem um inicio definido(15) mas não tem o fim, logo
+ele vai até a posição (20)
+
+se solicitar
+frase[6::3] ele irá escrever -> 'eVePh' (porque não foi delimitado uma
+posição final, apenas um inicio (6) e a quantidade de pulos que dará no caso (3))
+
+_________________________________________________________________
+ANÁLISE DE STRING *usando o mesmo exemplo
+
+ao usar o comando "len()" indicando a variavel - frase -
+len(frase) indica que quer saber o tamanho da string armazenada em frase
+logo ele mostrará 21 caracter
+
+comando ".count()"
+frase.count('o') ele irá contar quantos 'o' minusculos tem na string, no caso
+vai mostrar 3
+
+da mesma forma usando assim
+frase.count('o', 0, 13) ele vai buscar contar quantos 'o' tem da posição (0) até a
+posição  (12), lembrando que a contagem sempre para uma casa antes da
+delimitada no comando, então ele vai contar apenas um 'o'
+
+comando ".find()"
+frase.find('deo') ele faz uma busco pela sequencia de caracters mencionado
+e no caso irá indicar apartir de qual posição ele começa (11), visto que nesse
+caso foi encontrado apenas em um local essa sequencia de string 'deo'
+
+frase.find('Android') ele faz uma busca, mas como não vai encontrar esse
+valor na string. irá retornar o valor (-1), significa que não foi encontrado.
+
+comando "in" (Operador)
+se usarmos no sentido
+'Curso' in frase, nesse caso ele vai retornar o valor True apenas indicando
+que nessa string tem esse cunjunto de caracteres nessa ordem.
+
+__________________________________________________________
+TRANSFORMAÇÃO (através de métodos) *mesmo exemplo usado acima
+
+comando ".replace()"
+ao usar frase.replace('Python', 'Android')
+ele troca o trecho da string onde esta 'Python' por 'Android'
+
+comando ".upper()"
+ao usar com frase.upper(), ele vai transformar toda a string para letras
+maiúsculas, ficando dessa forma: 'CURSO EM VÍDEO PYTHON'
+logo o mesmo serve para .lower() torna todas as letras para
+minúsculos. ficando assim: 'curso em vídeo python'
+
+comando ".capitalize()"
+ao usar frase.capitalize(), ele irá deixar todas as letras em minúsculas
+exceto a primeira na posição (0). ficando dessa forma:
+'Curso em vídeo python'
+
+comando ".title()"
+ao usar frase.title(), ele faz uma leitura identificando cada para na string e
+transforma a primeira letra de cada palavra em maiúscula, ficando assim:
+'Curso Em Vídeo Python'
+
+
+ex:.
+frase = '   Aprenda Python  '
+
+frase____________________________________________
+|   |   |   | A | p | r | e | n | d | a |    | P | y | t | h | o | n |    |    |
+  0  1  2   3   4   5   6   7   8   9   10 11 12 13 14 15 16 17 18
+
+comando ".strip()"
+ao usar frase.strip(), ela remove todos os espaços em branco do inicio e
+do fim, deixando apenas os que separam as palavras. fican do assim:
+'Aprenda Python'
+
+comando ".rstrip()"
+ao usar frase.rstrip(), ela remove os espaços em branco somente do lado
+direito no caso da frase acima apenas as posições (17 e 18).
+ficando assim: '   Aprenda Python'
+da mesma forma existe o comando ".lstrip" que rermove os espaços em
+branco à esquerda ficando assim: 'Aprenda Python  '
+
+
+_________________________________________________________
+DIVISÃO DE STRINGS
+
+comando ".split()" de forma geral ele separa as palavras de uma variavel, e
+adiciona dentro de outra lista mantendo a mesma lista separada, no caso
+da frase 'Curso em Vídeo Python' ficando assim:
+" 'Curso' 'em' 'Vídeo' 'Python' " ou melhor visualizavél
+[ | C | u | r | s | o | ][ | e | m | ][ | V | í | d | e | o | ][ | P | y | t | h | o | n | ]
+     0   1   2  3   4         0    1        0   1   2   3    4        0    1   2   3   4   5
+               0                     1                       2                               3
+
+comando ".join()" da mesma forma que temos com separar uma variavel
+lista ->ex.  frase = " 'Cruso' 'em' 'Vídeo' 'Python' ", podemos também unir as
+partes "splitadas", porém de uma forma diferente mas bem simples.
+ficando assim: '-'.join(frase). percebe que entre as aspas simples temos
+um traço que ficará o resultado assim:
+ 'Curso-em-Vídeo-Python', ou melhor vizualizavél _______________
+ | C | u | r | s | o | - | e | m | - | V | í | d | e | o | - | P | y | t | h | o | n |
+   0   1   2   3   4   5  6     7   8   9  10 11 12 13 14 15 16 17 18 19 20
+ porém
+podemos optar por qualquer string dentro das aspas, podendo até colocar
+o espaço que antes era usado.
+
+
