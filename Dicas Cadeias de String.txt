@@ -48,7 +48,7 @@ posição  (12), lembrando que a contagem sempre para uma casa antes da
 delimitada no comando, então ele vai contar apenas um 'o'
 
 comando ".find()"
-frase.find('deo') ele faz uma busco pela sequencia de caracters mencionado
+frase.find('deo') ele faz uma busca pela sequencia de caracters mencionado
 e no caso irá indicar apartir de qual posição ele começa (11), visto que nesse
 caso foi encontrado apenas em um local essa sequencia de string 'deo'
 
@@ -93,7 +93,7 @@ frase____________________________________________
 
 comando ".strip()"
 ao usar frase.strip(), ela remove todos os espaços em branco do inicio e
-do fim, deixando apenas os que separam as palavras. fican do assim:
+do fim, deixando apenas os que separam as palavras. ficando assim:
 'Aprenda Python'
 
 comando ".rstrip()"
