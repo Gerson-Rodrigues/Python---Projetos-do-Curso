@@ -1,0 +1,15 @@
+Bibliotecas:
+
+ "time", função "sleep":
+
+ faz com que o computador entre em um modo de pause que pode ser
+ configurável entre parentêses quantos segundos quiser.
+ Ex:.
+ sleep(3)
+
+ "datetime", função "date"
+ faz uma busca na máquina pelo calendário.
+ um exemplo de como buscar o ano atual é representado assim:
+ Ex:.
+  date.today().year
+

@@ -1,0 +1,42 @@
+Condicional Simples
+usa apenas o if:
+    e segue a execução do programa na sequência da condição, sendo
+    ela verdadeira ou não.
+    ex:.
+    programa rodando
+        if(teste de if verdadeiro):
+            rode o comando.
+    programa seguindo adiante.
+
+Condicional Composta
+usa o if:
+    e o else:
+    e a execução do programa, só seguirá adiante após concluir a
+    condição verdadeira (if) ou falsa (else).
+    ex:.
+    tempo = int(input('Quantos anos tem seu carro:')
+    if tempo<=3:
+        print('carro novo')
+    else:
+        print('carro velho')
+    print('---FIM---')
+
+
+Condição Simplificada
+usando apenas uma linha de comando na condição.
+    obs:. a condição simplificada pode ser um print, uma atribuição
+    ex:.
+    tempo = int(input('Quantos anos tem seu carro?'))
+    print('carro novo' if tempo<=3 else 'carro velho')
+    print('---FIM---')
+
+OBS:. tudo que vai dentro de uma condição seja ela simples, composta ou
+simplificada chamamos de 'Blocos de Comando'.
+
+
+
+
+
+
+
+
