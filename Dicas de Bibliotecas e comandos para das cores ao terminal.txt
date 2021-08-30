@@ -1,0 +1,33 @@
+Bibliotecas:
+
+ "time", função "sleep":
+
+ faz com que o computador entre em um modo de pause que pode ser
+ configurável entre parentêses quantos segundos quiser.
+ Ex:.
+ sleep(3)
+
+ "datetime", função "date"
+ faz uma busca na máquina pelo calendário.
+ um exemplo de como buscar o ano atual é representado assim:
+ Ex:.
+  date.today().year
+
+DICAS DE CORES
+(código ansi)
+os códigos para cores em python começam sempre com:
+"\033[" e terminam com "m" (minúsculo), nesse meio terá até três códigos separados
+por ";" (ponto e vírgula) onde pode colocar estio "style", para dizer se
+é negrito, itálico, normal... cor do texto "text", informa a cor que ficará o texto,
+e cor de fundo "back", que como diz deixa um fundo colorido no texto digitado.
+
+Códigos
+style -  1 (para negrito)            7 (para negativo)
+            4 (para sublinado)       0 (nenhuma mudança)
+
+text -    30 (branco) / 31 (vermelho) / 32 (verde) / 33 (amarelo) /
+            34 (azul)     / 35 (magenta)  / 36 (ciano) /  37 (cinza)
+
+back -  40 (branco) / 41 (vermelho) / 42 (verde) / 43 (amarelo) /
+            44 (azul)     / 45 (magenta)  / 46 (ciano) /  47 (cinza)
+
