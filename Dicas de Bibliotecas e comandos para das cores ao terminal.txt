@@ -31,3 +31,21 @@ text -    30 (branco) / 31 (vermelho) / 32 (verde) / 33 (amarelo) /
 back -  40 (branco) / 41 (vermelho) / 42 (verde) / 43 (amarelo) /
             44 (azul)     / 45 (magenta)  / 46 (ciano) /  47 (cinza)
 
+EX:.
+print('\033[1;32;47mOlá, Mundo!\033[m')
+    ou podes usar com o "format"
+print('{}Olá, Mundo!!{}'.format('\033[1;32;47m', '\033[m '))
+
+
+Mais pra frente será aprofundado como fucniona as bibliotecas que para
+cores podemos usar assim:
+
+segue exemplo:
+INICIO DO PROGRAMA TESTE ->
+nome = 'fulano'
+cores = {'limpa' : '\033[m' ,
+              'azul' : '\033[34m' ,
+              'amarelo' : '\033[33m' ,
+              'pretoebranco' : '\033[7;30m' }
+
+print('Olá! muito prazer em te conhecer, {}{}{}!!!'.format(cores['azul'], nome , cores['limpa'])
